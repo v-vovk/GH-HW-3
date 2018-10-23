@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Немного о себе</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Урок "Формы": теги и их атрибуты.</h1>
+    <h2>Расскажите немного о себе...</h2>
+    <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+    <form action="#"  method="get">
+        <fieldset>
+            <legend>Коротко о себе</legend>
+
+            <label for="name">Имя:</label>
+            <input id="name" type="text"><br>
+
+            <label for="second-name">Фамилия:</label>
+            <input id="second-name" type="text"><br>
+
+            <label for="second-name">Пол:</label>
+            <input id="r1" type="radio" name="male">
+            <label for="r1">мужской</label>
+            <input id="r2" type="radio" name="male">
+            <label for="r2">женский</label><br>
+
+            <label for="age">Возрост:</label>
+            <input id="age" type="text">
+            <label for="age">лет</label><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Контактная информация</legend>
+            <label for="telephone">Телефон</label>
+            <input id="telephone"><br>
+            <label for="email">Email</label>
+            <input id="email"><br>
+        </fieldset>
+
+
+
+
+
+        <fieldset>
+            <legend>Персональная информация</legend>
+            <label for="gender">Пол</label>
+            <select id="gender">
+                <option value="female">Женщина</option>
+                <option value="male">Мужчина</option>
+            </select><br>
+            <label for="comments">Перечислите личные качества</label>
+            <textarea id="comments"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Выберите ваших любимых животных</legend>
+            <label for="zebra"><input id="zebra" type="checkbox"> Зебра</label>
+            <label for="cat"><input id="cat" type="checkbox"> Кошак</label>
+            <label for="anaconda"><input id="anaconda" type="checkbox"> Анаконда</label>
+            <label for="human"><input id="human" type="checkbox"> Человек</label>
+            <label for="elephant"><input id="elephant" type="checkbox"> Слон</label>
+            <label for="wildebeest"><input id="wildebeest" type="checkbox"> Антилопа</label>
+            <label for="pigeon"><input id="pigeon" type="checkbox"> Голубь</label>
+            <label for="crab"><input id="crab" type="checkbox"> Краб</label>
+        </fieldset>
+        <p><input type="submit" value="Отправить информацию"></p>
+    </form>
+</body>
+</html>
