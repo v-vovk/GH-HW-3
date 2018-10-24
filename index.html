@@ -26,16 +26,55 @@
             <label for="r2">женский</label><br>
 
             <label for="age">Возрост:</label>
-            <input id="age" type="text">
+            <input id="age" type="number"  size="3" name="age" min="1" max="10" value="23">
             <label for="age">лет</label><br>
         </fieldset>
 
         <fieldset>
-            <legend>Контактная информация</legend>
-            <label for="telephone">Телефон</label>
-            <input id="telephone"><br>
-            <label for="email">Email</label>
-            <input id="email"><br>
+            <legend>Подробнее о себе</legend>
+            <input id="r3" type="radio" name="male">
+            <label for="r3">Молодой человек</label><br>
+            <input id="r4" type="radio" name="male">
+            <label for="r4">Девушка</label><br>
+
+            <!--Не провтикать пофіксити інпути-->
+            <input id="born" type="date" name="born" value="1995-05-17" min="1917-01-01" max="2018-10-24">
+            <lebel for="born">Дата рождения</lebel><br>
+            <select name="have-love" id="have-love">
+                <option value="no">Нет</option>
+                <option value="yes" selected>Да</option>
+                <option value="gey">Гей</option>
+                <option value="lesby">Лезбі</option>
+            </select>
+            <lebel for="have-love">Семейное положение</lebel><br>
+            <select name="have-love" id="social-status">
+                <option value="pupil">Ученик</option>
+                <option value="work">Работаю</option>
+                <option value="student" selected>Студент</option>
+                <option value="parent-eat">У родителей на шее</option>
+            </select>
+            <lebel for="social-status">Социальный статус</lebel><br>
+            <input type="text" name="location" id="location">
+            <lebel for="location">Местожительство</lebel><br>
+            <!--не провтикать інпути пофіксити-->
+
+            <p><b>Что вы обычно делаете на выходных:</b></p>
+            <input id="c1" value="sleep" type="checkbox" name="sleep">
+            <label for="c1">Сплю</label><br>
+            <input id="c2" value="hang-out-with-friends"  type="checkbox" name="hang-out-with-friends">
+            <label for="c2">Гуляю с друзьями</label><br>
+            <input id="c3" value="fishing"  type="checkbox" name="fishing">
+            <label for="c3">Хожу на рыбалку</label><br>
+            <input id="c4" value="play-game"  type="checkbox" name="play-game">
+            <label for="c4">Играю в игры</label><br>
+
+            <p><b>Расказать о формах в ниге, посвященной HTML:</b></p>
+            <select name="form-in-book" title="form-in-book">
+                <option value="smt-1">smt-1</option>
+                <option value="smt-2">smt-2</option>
+                <option value="smt-3">smt-3</option>
+                <option value="smt-4">smt-4</option>
+            </select>
         </fieldset>
 
 
