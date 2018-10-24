@@ -9,6 +9,7 @@
     <h1>Урок "Формы": теги и их атрибуты.</h1>
     <h2>Расскажите немного о себе...</h2>
     <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные.</p>
+
     <form action="#"  method="get">
         <fieldset>
             <legend>Коротко о себе</legend>
@@ -92,40 +93,41 @@
 
             <select name="position" size="3" title="position">
                 <option value="1-pos">Первая позиция</option>
-                <option value="2-pos">Вторая позиция</option>
+                <option value="2-pos" selected>Вторая позиция</option>
                 <option value="3-pos">Третья позиция</option>
                 <option value="4-pos">Четвортая позиция</option>
                 <option value="5-pos">Пьятая позиция</option>
             </select>
         </fieldset>
 
-
-
-
-
         <fieldset>
-            <legend>Персональная информация</legend>
-            <label for="gender">Пол</label>
-            <select id="gender">
-                <option value="female">Женщина</option>
-                <option value="male">Мужчина</option>
-            </select><br>
+            <legend>И в заключении</legend>
 
+            <input type="text" title="for-us" placeholder="Это поле было введено до вас"><br><br>
 
+            <label for="second-email"><b>Email:</b></label><br>
+            <input id="second-email" type="email"><br><br>
+
+            <p><b>Хотите подписаться на самую модную рассылку спама?</b></p>
+            <p><em>Выберите категории</em></p>
+
+            <input id="c5" value="equipment" type="checkbox" name="equipment">
+            <label for="c5">Оборудование</label><br>
+            <input id="c6" value="food"  type="checkbox" name="food">
+            <label for="c6">Как приготовить обеды</label><br>
+            <input id="c7" value="lemon"  type="checkbox" name="lemon">
+            <label for="c7">Заработай миллион за два дня!</label><br>
+
+            <p><b>На сколько сложная задача:</b></p>
+            <input id="r9" type="radio" name="hard-task" checked>
+            <label for="r9">Совсем нет</label><br>
+            <input id="r10" type="radio" name="hard-task">
+            <label for="r10">Так себе</label><br>
+            <input id="r11" type="radio" name="hard-task">
+            <label for="r11">Еле справились</label><br>
         </fieldset>
 
-        <fieldset>
-            <legend>Выберите ваших любимых животных</legend>
-            <label for="zebra"><input id="zebra" type="checkbox"> Зебра</label>
-            <label for="cat"><input id="cat" type="checkbox"> Кошак</label>
-            <label for="anaconda"><input id="anaconda" type="checkbox"> Анаконда</label>
-            <label for="human"><input id="human" type="checkbox"> Человек</label>
-            <label for="elephant"><input id="elephant" type="checkbox"> Слон</label>
-            <label for="wildebeest"><input id="wildebeest" type="checkbox"> Антилопа</label>
-            <label for="pigeon"><input id="pigeon" type="checkbox"> Голубь</label>
-            <label for="crab"><input id="crab" type="checkbox"> Краб</label>
-        </fieldset>
-        <p><input type="submit" value="Отправить информацию"></p>
+        <input type="submit" value="Отправить">
     </form>
 </body>
 </html>
