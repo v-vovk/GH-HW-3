@@ -20,19 +20,20 @@
             <input id="second-name" type="text"><br>
 
             <label for="second-name">Пол:</label>
-            <input id="r1" type="radio" name="male">
+            <input id="r1" type="radio" name="male" checked>
             <label for="r1">мужской</label>
             <input id="r2" type="radio" name="male">
             <label for="r2">женский</label><br>
 
             <label for="age">Возрост:</label>
-            <input id="age" type="number"  size="3" name="age" min="1" max="10" value="23">
+            <input id="age" type="number"  size="3" name="age" min="1" max="120" value="23">
             <label for="age">лет</label><br>
         </fieldset>
 
         <fieldset>
             <legend>Подробнее о себе</legend>
-            <input id="r3" type="radio" name="male">
+
+            <input id="r3" type="radio" name="male" checked>
             <label for="r3">Молодой человек</label><br>
             <input id="r4" type="radio" name="male">
             <label for="r4">Девушка</label><br>
@@ -70,10 +71,31 @@
 
             <p><b>Расказать о формах в ниге, посвященной HTML:</b></p>
             <select name="form-in-book" title="form-in-book">
-                <option value="smt-1">smt-1</option>
+                <option value="smt-1">Site frequency</option>
                 <option value="smt-2">smt-2</option>
                 <option value="smt-3">smt-3</option>
                 <option value="smt-4">smt-4</option>
+            </select>
+
+            <p><b>Сколько книг Вы прочитали за свою жизнь:</b></p>
+            <input id="r5" type="radio" name="male">
+            <label for="r5">0-10</label><br>
+            <input id="r6" type="radio" name="male">
+            <label for="r6">11-20</label><br>
+            <input id="r7" type="radio" name="male">
+            <label for="r7">21-50</label><br>
+            <input id="r8" type="radio" name="male">
+            <label for="r8">50+</label><br>
+
+            <label for="comments"><b>Ваши комментарии:</b></label><br>
+            <textarea id="comments" rows="10" cols="65" name="textarea"></textarea><br>
+
+            <select name="position" size="3" title="position">
+                <option value="1-pos">Первая позиция</option>
+                <option value="2-pos">Вторая позиция</option>
+                <option value="3-pos">Третья позиция</option>
+                <option value="4-pos">Четвортая позиция</option>
+                <option value="5-pos">Пьятая позиция</option>
             </select>
         </fieldset>
 
@@ -88,8 +110,8 @@
                 <option value="female">Женщина</option>
                 <option value="male">Мужчина</option>
             </select><br>
-            <label for="comments">Перечислите личные качества</label>
-            <textarea id="comments"></textarea>
+
+
         </fieldset>
 
         <fieldset>
